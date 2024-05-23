@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Keyframes</title>
+    <style>
+        .box {
+            border: 4px solid black;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: Right1;
+            animation-duration: 6s;
+            /* animation-timing-function: ease; */
+
+            /* animation-delay: 0.5s; */
+            animation-iteration-count: infinite;
+        }
+
+        .container {
+            background-color: aqua;
+        }
+
+        @keyframes Right1 {
+            0% {
+                left: 0px;
+                color: blueviolet;
+            }
+
+            50% {
+                left: 400px;
+            }
+
+            100% {
+                left: 0px
+            }
+
+        }
+
+        .container2 {
+            background-color: red;
+
+        }
+
+        .box2 {
+            border: 4px solid black;
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+            animation-name: Right2;
+            animation-duration: 6s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes Right2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 208px;
+                left: 0px;
+            }
+
+            50% {
+                top: 208px;
+                left: 208px;
+            }
+
+            75% {
+                top: 0px;
+                left: 208px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+
+        .container3 {
+            background-color: green;
+
+        }
+
+        .box3 {
+            border: 4px solid black;
+            background-color: greenyellow;
+            width: 200px;
+            height: 200px;
+            animation-name: Right3;
+            animation-duration: 6s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes Right3 {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+
+            25% {
+                width: 200px;
+                height: 0px;
+            }
+
+            50% {
+                width: 200px;
+                height: 200px;
+            }
+
+            75% {
+                width: 0px;
+                height: 200px;
+            }
+
+            100% {
+                width: 0px;
+                height: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <div class="container2">
+        <div class="box2"></div>
+    </div>
+
+    <div class="container3">
+        <div class="box3"></div>
+    </div>
+
+</body>
+
+</html>

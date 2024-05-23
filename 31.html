@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+
+        /* .container{
+    color: aqua;
+        } */
+
+        /* .container p{
+            color: yellowgreen;
+        } */
+
+        /* .row li p{
+            color: yellowgreen;
+        } */
+
+        /* .row li{
+            color: yellowgreen;
+        } */
+
+        /* works on p present in div  */
+        /* div> p{
+            color: yellowgreen;
+        } */
+        
+        /* works for p which is immediatly after div */
+        /* div + p{
+            color: yellowgreen;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Selectors</h2>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>first row list</p></li>
+                <li>second row list</li>
+            </ul>
+        </div>
+        <p>this is para under D</p>
+    </div>
+    <p>this is para on its on</p>
+</body>
+</html>

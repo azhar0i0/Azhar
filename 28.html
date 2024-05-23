@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox, Justify, Align items</title>
+    <style>
+        .container{
+            border: 4px solid black;
+            height: 544px;
+            width: 100%;
+            display: flex;
+             /* flexdicrection is defulat as row  */
+            /* flex-direction: column;*/
+          /* flex flow is used to used bothflex direction and flex warp at a same time */
+           /* justify-content: space-between;  */
+           /* align-items: center; */
+        }
+        .item{
+            border: 2px solid blue;
+            background-color: tomato;
+            margin: 4px;
+            padding: 4px;
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+        }
+         #item-1{ 
+        flex-grow: 3;}
+        #item-2{
+            /* order: 35; */
+            flex-grow: 6;
+            flex-basis: 320px;
+        }
+    </style>
+</head>
+<body>
+     <h2>FlexBox </h2>
+     <div class="container">
+        <div class="item" id="item-1">1</div>
+        <div class="item" id="item-2">2</div>
+        <div class="item" id="item-3">3</div>
+        <div class="item" id="item-4">4</div>
+     </div>
+</body>
+</html>
